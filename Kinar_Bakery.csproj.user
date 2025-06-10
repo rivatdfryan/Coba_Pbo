@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="GUI\BestSeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\FormUbahPengguna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\HomeDasboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\HomeDasboardkasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Katalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Keranjang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Keranjang1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\LaporanDasboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\LaporanPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
