@@ -13,6 +13,9 @@
     <Compile Update="GUI\HomeDasboardkasir.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\JagaKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\Katalog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -29,6 +32,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\MonitoringKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Presensi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\Register.cs">

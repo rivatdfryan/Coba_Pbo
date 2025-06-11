@@ -1,6 +1,6 @@
-﻿namespace Kinar_Bakery
+﻿namespace Kinar_Bakery.GUI
 {
-    partial class LaporanPenjualan
+    partial class MonitoringKaryawan
     {
         /// <summary>
         /// Required designer variable.
@@ -47,17 +47,24 @@
             button1 = new Button();
             panel4 = new Panel();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            label5 = new Label();
+            textBox3 = new TextBox();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
             panel2.SuspendLayout();
             panel12.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(251, 238, 215);
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(button7);
+            panel2.Controls.Add(button6);
+            panel2.Controls.Add(button5);
+            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(label5);
             panel2.Controls.Add(textBox2);
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(label4);
@@ -70,12 +77,12 @@
             panel2.Location = new Point(1, -1);
             panel2.Name = "panel2";
             panel2.Size = new Size(1263, 683);
-            panel2.TabIndex = 2;
+            panel2.TabIndex = 3;
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(915, 112);
+            textBox2.Location = new Point(720, 115);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(176, 26);
             textBox2.TabIndex = 10;
@@ -83,7 +90,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(414, 112);
+            textBox1.Location = new Point(389, 112);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(176, 26);
             textBox1.TabIndex = 9;
@@ -92,7 +99,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(770, 115);
+            label4.Location = new Point(595, 118);
             label4.Name = "label4";
             label4.Size = new Size(119, 20);
             label4.TabIndex = 8;
@@ -114,7 +121,7 @@
             panel12.Controls.Add(label3);
             panel12.Location = new Point(267, 159);
             panel12.Name = "panel12";
-            panel12.Size = new Size(967, 59);
+            panel12.Size = new Size(975, 59);
             panel12.TabIndex = 6;
             // 
             // label3
@@ -122,22 +129,22 @@
             label3.AutoSize = true;
             label3.Font = new Font("Verdana", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(251, 238, 215);
-            label3.Location = new Point(380, 16);
+            label3.Location = new Point(439, 17);
             label3.Name = "label3";
-            label3.Size = new Size(231, 25);
+            label3.Size = new Size(111, 25);
             label3.TabIndex = 8;
-            label3.Text = "Laporan Penjualan";
+            label3.Text = "Presensi";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 45.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(80, 43, 15);
-            label1.Location = new Point(474, 0);
+            label1.Location = new Point(438, 0);
             label1.Name = "label1";
-            label1.Size = new Size(564, 82);
+            label1.Size = new Size(662, 82);
             label1.TabIndex = 3;
-            label1.Text = "Laporan Penjualan";
+            label1.Text = "Monitoring Karyawan";
             // 
             // panel3
             // 
@@ -260,34 +267,84 @@
             panel1.Size = new Size(0, 0);
             panel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // label5
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(373, 245);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(678, 322);
-            dataGridView1.TabIndex = 11;
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(937, 118);
+            label5.Name = "label5";
+            label5.Size = new Size(123, 20);
+            label5.TabIndex = 11;
+            label5.Text = "Cari Karyawan";
             // 
-            // LaporanPenjualan
+            // textBox3
+            // 
+            textBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(1066, 115);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(176, 26);
+            textBox3.TabIndex = 12;
+            // 
+            // button5
+            // 
+            button5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.FromArgb(128, 64, 0);
+            button5.Location = new Point(919, 545);
+            button5.Name = "button5";
+            button5.Size = new Size(141, 34);
+            button5.TabIndex = 13;
+            button5.Text = "Rekapitulasi";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.White;
+            button6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.FromArgb(128, 64, 0);
+            button6.Location = new Point(1101, 545);
+            button6.Name = "button6";
+            button6.Size = new Size(141, 34);
+            button6.TabIndex = 14;
+            button6.Text = "Bayar Gaji";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            button7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.FromArgb(128, 64, 0);
+            button7.Location = new Point(267, 619);
+            button7.Name = "button7";
+            button7.Size = new Size(97, 30);
+            button7.TabIndex = 15;
+            button7.Text = "Kembali";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // MonitoringKaryawan
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1264, 681);
             Controls.Add(panel2);
-            Name = "LaporanPenjualan";
-            Text = "LaporanPenjualan";
+            Name = "MonitoringKaryawan";
+            Text = "MonitoringKaryawan";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel2;
+        private Button button5;
+        private TextBox textBox3;
+        private Label label5;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label4;
         private Label label2;
         private Panel panel12;
         private Label label3;
@@ -303,9 +360,7 @@
         private Button button1;
         private Panel panel4;
         private Panel panel1;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private Label label4;
-        private DataGridView dataGridView1;
+        private Button button7;
+        private Button button6;
     }
 }

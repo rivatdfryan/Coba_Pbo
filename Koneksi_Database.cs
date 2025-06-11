@@ -14,7 +14,7 @@ namespace Kinar_Bakery
 
         public DatabaseConnection()
         {
-            connectionString = "Host=localhost;Port=5432;Username=postgres;Password=a.1056.A;Database=Coba_Bakery_P";
+            connectionString = "Host=localhost;Port=5432;Username=postgres;Password=dav3020;Database=Coba_Bakery_P";
         }
 
         public NpgsqlConnection GetConnection()

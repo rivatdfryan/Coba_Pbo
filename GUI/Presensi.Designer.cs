@@ -1,6 +1,6 @@
-﻿namespace Kinar_Bakery
+﻿namespace Kinar_Bakery.GUI
 {
-    partial class HomeDasboardkasir
+    partial class Presensi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeDasboardkasir));
-            label1 = new Label();
-            label2 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Presensi));
             panel2 = new Panel();
+            panel12 = new Panel();
+            lblProfil = new Label();
+            panel9 = new Panel();
+            button1 = new Button();
+            label1 = new Label();
             lblJudul = new Label();
             panel3 = new Panel();
             panel7 = new Panel();
@@ -44,56 +47,20 @@
             btnHome = new Button();
             panel4 = new Panel();
             panel1 = new Panel();
-            printPreviewDialog1 = new PrintPreviewDialog();
-            panel9 = new Panel();
-            label3 = new Label();
-            panel12 = new Panel();
-            panel8 = new Panel();
-            panel10 = new Panel();
-            label4 = new Label();
-            panel11 = new Panel();
-            panel13 = new Panel();
-            label5 = new Label();
-            label6 = new Label();
             textBox1 = new TextBox();
-            label7 = new Label();
             panel2.SuspendLayout();
-            panel3.SuspendLayout();
             panel12.SuspendLayout();
-            panel10.SuspendLayout();
-            panel11.SuspendLayout();
-            panel13.SuspendLayout();
+            panel9.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(328, 195);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 15);
-            label1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 45.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(80, 43, 15);
-            label2.Location = new Point(355, 299);
-            label2.Name = "label2";
-            label2.Size = new Size(0, 82);
-            label2.TabIndex = 4;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(251, 238, 215);
-            panel2.Controls.Add(label7);
             panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(panel10);
-            panel2.Controls.Add(panel11);
-            panel2.Controls.Add(panel8);
             panel2.Controls.Add(panel12);
             panel2.Controls.Add(panel9);
+            panel2.Controls.Add(label1);
             panel2.Controls.Add(lblJudul);
             panel2.Controls.Add(panel3);
             panel2.Controls.Add(panel1);
@@ -101,18 +68,69 @@
             panel2.Location = new Point(1, -1);
             panel2.Name = "panel2";
             panel2.Size = new Size(1263, 683);
-            panel2.TabIndex = 5;
+            panel2.TabIndex = 6;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(80, 43, 15);
+            panel12.Controls.Add(lblProfil);
+            panel12.Location = new Point(439, 235);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(655, 63);
+            panel12.TabIndex = 6;
+            // 
+            // lblProfil
+            // 
+            lblProfil.AutoSize = true;
+            lblProfil.Font = new Font("Verdana", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblProfil.ForeColor = Color.FromArgb(251, 238, 215);
+            lblProfil.Location = new Point(163, 23);
+            lblProfil.Name = "lblProfil";
+            lblProfil.Size = new Size(361, 25);
+            lblProfil.TabIndex = 8;
+            lblProfil.Text = "Nama Karyawan : Nama Kasir";
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.FromArgb(183, 150, 107);
+            panel9.Controls.Add(button1);
+            panel9.Location = new Point(439, 289);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(655, 282);
+            panel9.TabIndex = 5;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.FromArgb(128, 64, 0);
+            button1.Location = new Point(257, 97);
+            button1.Name = "button1";
+            button1.Size = new Size(197, 67);
+            button1.TabIndex = 0;
+            button1.Text = "Presensi";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(289, 169);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Tanggal Hari Ini";
+            label1.Click += label1_Click;
             // 
             // lblJudul
             // 
             lblJudul.AutoSize = true;
             lblJudul.Font = new Font("Segoe UI", 45.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblJudul.ForeColor = Color.FromArgb(80, 43, 15);
-            lblJudul.Location = new Point(501, 0);
+            lblJudul.Location = new Point(649, 10);
             lblJudul.Name = "lblJudul";
-            lblJudul.Size = new Size(504, 82);
+            lblJudul.Size = new Size(270, 82);
             lblJudul.TabIndex = 3;
-            lblJudul.Text = "Dashboard Kasir\r\n";
+            lblJudul.Text = "Presensi";
             // 
             // panel3
             // 
@@ -218,6 +236,7 @@
             btnHome.Text = "Home  ";
             btnHome.TextAlign = ContentAlignment.MiddleRight;
             btnHome.UseVisualStyleBackColor = false;
+            btnHome.Click += btnHome_Click;
             // 
             // panel4
             // 
@@ -235,183 +254,51 @@
             panel1.Size = new Size(0, 0);
             panel1.TabIndex = 0;
             // 
-            // printPreviewDialog1
-            // 
-            printPreviewDialog1.AutoScrollMargin = new Size(0, 0);
-            printPreviewDialog1.AutoScrollMinSize = new Size(0, 0);
-            printPreviewDialog1.ClientSize = new Size(400, 300);
-            printPreviewDialog1.Enabled = true;
-            printPreviewDialog1.Icon = (Icon)resources.GetObject("printPreviewDialog1.Icon");
-            printPreviewDialog1.Name = "printPreviewDialog1";
-            printPreviewDialog1.Visible = false;
-            // 
-            // panel9
-            // 
-            panel9.BackColor = Color.FromArgb(183, 150, 107);
-            panel9.Location = new Point(267, 225);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(294, 431);
-            panel9.TabIndex = 5;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(251, 238, 215);
-            label3.Location = new Point(13, 23);
-            label3.Name = "label3";
-            label3.Size = new Size(269, 16);
-            label3.TabIndex = 8;
-            label3.Text = "Total Produk Yang Anda Jual Hari Ini";
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.FromArgb(80, 43, 15);
-            panel12.Controls.Add(label3);
-            panel12.Location = new Point(267, 171);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(294, 59);
-            panel12.TabIndex = 6;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.FromArgb(183, 150, 107);
-            panel8.Location = new Point(607, 225);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(298, 431);
-            panel8.TabIndex = 6;
-            // 
-            // panel10
-            // 
-            panel10.BackColor = Color.FromArgb(80, 43, 15);
-            panel10.Controls.Add(label4);
-            panel10.Location = new Point(607, 171);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(298, 59);
-            panel10.TabIndex = 9;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(251, 238, 215);
-            label4.Location = new Point(11, 21);
-            label4.Name = "label4";
-            label4.Size = new Size(280, 18);
-            label4.TabIndex = 8;
-            label4.Text = "Total Pendapatan Bakery Hari Ini";
-            // 
-            // panel11
-            // 
-            panel11.BackColor = Color.FromArgb(183, 150, 107);
-            panel11.Controls.Add(panel13);
-            panel11.Location = new Point(946, 173);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(294, 483);
-            panel11.TabIndex = 10;
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(80, 43, 15);
-            panel13.Controls.Add(label5);
-            panel13.Location = new Point(0, 0);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(294, 59);
-            panel13.TabIndex = 9;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(251, 238, 215);
-            label5.Location = new Point(44, 23);
-            label5.Name = "label5";
-            label5.Size = new Size(213, 18);
-            label5.TabIndex = 8;
-            label5.Text = "Status Presensi Hari Ini";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(269, 136);
-            label6.Name = "label6";
-            label6.Size = new Size(174, 20);
-            label6.TabIndex = 11;
-            label6.Text = "Pilih Tanggal Hari Ini";
-            // 
             // textBox1
             // 
             textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(449, 133);
+            textBox1.Location = new Point(439, 166);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(148, 26);
-            textBox1.TabIndex = 12;
+            textBox1.Size = new Size(149, 26);
+            textBox1.TabIndex = 7;
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(634, 82);
-            label7.Name = "label7";
-            label7.Size = new Size(235, 20);
-            label7.TabIndex = 13;
-            label7.Text = "Selamat Datang Nama Kasir";
-            // 
-            // HomeDasboardkasir
+            // Presensi
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1264, 681);
             Controls.Add(panel2);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            DoubleBuffered = true;
-            Name = "HomeDasboardkasir";
-            Text = "HomeDasboardkasir";
+            Name = "Presensi";
+            Text = "Presensi";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel3.ResumeLayout(false);
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
-            panel10.ResumeLayout(false);
-            panel10.PerformLayout();
-            panel11.ResumeLayout(false);
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
         private Panel panel2;
+        private Panel panel12;
+        private Label lblProfil;
+        private Panel panel9;
         private Label lblJudul;
         private Panel panel3;
+        private Panel panel7;
+        private Button btnKatalog;
+        private Panel panel5;
         private Button button4;
         private Panel panel15;
         private Panel panel6;
-        private Button btnHome;
         private Button btnAbsen;
+        private Button btnHome;
         private Panel panel4;
         private Panel panel1;
-        private Panel panel5;
-        private PrintPreviewDialog printPreviewDialog1;
-        private Button btnKatalog;
-        private Panel panel7;
-        private Panel panel12;
-        private Label label3;
-        private Panel panel9;
-        private Panel panel10;
-        private Label label4;
-        private Panel panel11;
-        private Panel panel13;
-        private Label label5;
-        private Panel panel8;
+        private Label label1;
+        private Button button1;
         private TextBox textBox1;
-        private Label label6;
-        private Label label7;
     }
 }
