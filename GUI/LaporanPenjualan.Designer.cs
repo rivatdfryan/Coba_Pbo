@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel2 = new Panel();
+            dataGridView1 = new DataGridView();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             label4 = new Label();
@@ -47,11 +48,10 @@
             button1 = new Button();
             panel4 = new Panel();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel12.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel2
@@ -71,6 +71,15 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1263, 683);
             panel2.TabIndex = 2;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(373, 245);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(678, 322);
+            dataGridView1.TabIndex = 11;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // textBox2
             // 
@@ -260,14 +269,6 @@
             panel1.Size = new Size(0, 0);
             panel1.TabIndex = 0;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(373, 245);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(678, 322);
-            dataGridView1.TabIndex = 11;
-            // 
             // LaporanPenjualan
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -278,10 +279,10 @@
             Text = "LaporanPenjualan";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
